@@ -20,8 +20,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "https://cohc.onrender.com",
-  credentials: true,
+  origin: "*", // Allow requests from any origin
 }));
 
 // Connect to database
